@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DF3081A9-F236-EE1D-18A8-4F7896A94621}</ProjectGuid>
+    <ProjectGuid>{9D065870-FCBC-7E2F-DCD2-FBEBF33E93BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,54 +63,85 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\QFramework\1.导出UnityPackage\Exporter.cs" />
-    <Compile Include="Assets\QFramework\10.MonoBehaviour简化\Hide.cs" />
-    <Compile Include="Assets\QFramework\11.使用协成延时调用方法\DelayWithCoroution.cs" />
-    <Compile Include="Assets\QFramework\12.简单消息机制\MonoBehaviourSimplify.cs" />
-    <Compile Include="Assets\QFramework\12.简单消息机制\MsgDispatcher.cs" />
-    <Compile Include="Assets\QFramework\2.复制文本到粘贴板\CommonUtil.cs" />
-    <Compile Include="Assets\QFramework\3.打开网页\OpenWebsite.cs" />
-    <Compile Include="Assets\QFramework\4.简化Gameobject\GameObjectSimplify.cs" />
-    <Compile Include="Assets\QFramework\5.简化Transform\TransformSimplify.cs" />
-    <Compile Include="Assets\QFramework\6.判断屏幕宽高比\ResolutionCheck.cs" />
-    <Compile Include="Assets\QFramework\7.概率函数\MathUtil.cs" />
-    <Compile Include="Assets\QFramework\8.Partial关键字\GameObjectSimplify.cs" />
-    <Compile Include="Assets\QFramework\8.Partial关键字\PartialKeyWord.cs" />
-    <Compile Include="Assets\QFramework\8.Partial关键字\TransformSimplify.cs" />
-    <Compile Include="Assets\QFramework\9.从容器中随机取出一个值\MathUtil.cs" />
-    <Compile Include="Assets\QFramework\编辑器扩展\EditorUtil.cs" />
+    <Compile Include="Assets\QFramework\1.改变材质的渲染模式\MaterialRenderingMode.cs" />
+    <Compile Include="Assets\QFramework\2.改变窗口分辨率\ChangeWindowsResolution.cs" />
+    <Compile Include="Assets\QFramework\3.UI拖拽\UIDrag.cs" />
+    <Compile Include="Assets\QFramework\Example\1.复制文本到粘贴板\CommonUtilExample.cs" />
+    <Compile Include="Assets\QFramework\Example\10.框架示例\FrameworkExample.cs" />
+    <Compile Include="Assets\QFramework\Example\11.MainManager\Game\GameModule.cs" />
+    <Compile Include="Assets\QFramework\Example\11.MainManager\Home\HomeModule.cs" />
+    <Compile Include="Assets\QFramework\Example\12.GUIManager\GUIExample.cs" />
+    <Compile Include="Assets\QFramework\Example\13.AudioManager\AudioExample.cs" />
+    <Compile Include="Assets\QFramework\Example\14.PoolManager\PoolExample.cs" />
+    <Compile Include="Assets\QFramework\Example\15.LevelManager\LevelExample.cs" />
+    <Compile Include="Assets\QFramework\Example\15.LevelManager\LevelManager.cs" />
+    <Compile Include="Assets\QFramework\Example\16.单例模式\SingletonExample.cs" />
+    <Compile Include="Assets\QFramework\Example\17.MonoBehaviour单例的模板\MonoSingleton.cs" />
+    <Compile Include="Assets\QFramework\Example\17.MonoBehaviour单例的模板\MonoSingletonExample.cs" />
+    <Compile Include="Assets\QFramework\Example\18.枚举类型工具类\EnumTypeChange.cs" />
+    <Compile Include="Assets\QFramework\Example\2.打开网页\OpenWebsite.cs" />
+    <Compile Include="Assets\QFramework\Example\20.打包前调用的脚本\BeforPackageExample.cs" />
+    <Compile Include="Assets\QFramework\Example\3.判断屏幕宽高比\ResolutionCheckExample.cs" />
+    <Compile Include="Assets\QFramework\Example\4.简化Transform\TransformSimplifyExample.cs" />
+    <Compile Include="Assets\QFramework\Example\5.简化Gameobject\GameObjectSimplifyExample.cs" />
+    <Compile Include="Assets\QFramework\Example\6.概率函数等数学例子\MathUtilExample.cs" />
+    <Compile Include="Assets\QFramework\Example\7.Mono简化\HideExample.cs" />
+    <Compile Include="Assets\QFramework\Example\8.延时调用\DelayWithCoroution.cs" />
+    <Compile Include="Assets\QFramework\Example\9.简单消息机制\MsgDispatcherExample.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Base\BaseManager.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Base\GameRoot.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Extension\GameObjectExtension.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Extension\TransformExtension.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Manager\GUIManager.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Manager\MainManager.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\ManagerTwo\AudioManager.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\ManagerTwo\RequestServerManager.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\MonoBehaviourSimplify.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Test\V0_0_4.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\CommonUtil.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\EditorUtil.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\MathUtil.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Mono类简化\Hide.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\MsgDispatcher.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Pool\CustomObjectFactory.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Pool\IObjectFactory.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Pool\IPool.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Pool\Pool.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\ResolutionCheck.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\SimpleObjectPool.cs" />
+    <Compile Include="Assets\QFramework\FrameWork\Util\Singleton.cs" />
     <Reference Include="Unity.DocZh.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.DocZh.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.DocZh.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Messenger.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.Messenger.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.Messenger.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.023">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.024">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,13 +345,13 @@
       <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/A_In2020_Using/QFromWorrk/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -667,6 +698,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Text2DTest.csproj">
+      <Project>{1E09A2C7-81FD-DCA1-218A-6662A37D2925}</Project>
+      <Name>Text2DTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

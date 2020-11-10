@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3B37D642-66A1-3C59-FDFA-10B71BF34299}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Bolt.Flow.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_19;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.4.19f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\UnityHubDownload\2018.4.19f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\UnityHubDownload\2018.4.19f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\BoltFlowLegacy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\FlowGraphAsset.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\FlowGraphComponent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Graphs\LegacyFlowGraph.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Graphs\LegacyFlowGraphData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Hierarchy\INesterUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Hierarchy\NesterUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Hierarchy\SuperUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Architecture\LegacyFlowGraphInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Architecture\LegacyFlowGraphOutput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\CountItems.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\AddDictionaryItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\ClearDictionary.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\CreateDictionary.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\DictionaryContainsKey.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\GetDictionaryItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\MergeDictionaries.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\RemoveDictionaryItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Dictionaries\SetDictionaryItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\FirstItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\LastItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\AddListItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\ClearList.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\CreateList.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\GetListItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\InsertListItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\ListContainsItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\MergeLists.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\RemoveListItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\RemoveListItemAt.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Collections\Lists\SetListItem.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Events\CustomEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Events\CustomEventArgs.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Events\InvokeCustomEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Flow\Assign.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\ApproximatelyEqual.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\BinaryComparisonUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\Comparison.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\Equal.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\EqualityComparison.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\Greater.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\GreaterOrEqual.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\Less.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\LessOrEqual.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\NotApproximatelyEqual.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\NotEqual.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Logic\NumericComparison.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Absolute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Add.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Angle.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Average.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\CrossProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Distance.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Divide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\DotProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Formula.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Generic\GenericAdd.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Generic\GenericDivide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Generic\GenericModulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Generic\GenericMultiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Generic\GenericSubtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Lerp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Maximum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Minimum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Modulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\MoveTowards.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Multiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Normalize.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\PerSecond.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Project.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Round.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarAbsolute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarAdd.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarAverage.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarDivide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarExponentiate.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarLerp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarMaximum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarMinimum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarModulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarMoveTowards.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarMultiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarNormalize.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarPerSecond.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarRoot.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarRound.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarSubtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Scalar\ScalarSum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Subtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Sum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Absolute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Add.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Angle.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Average.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Distance.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Divide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2DotProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Lerp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Maximum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Minimum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Modulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2MoveTowards.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Multiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Normalize.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2PerSecond.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Project.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Round.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Subtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector2\Vector2Sum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Absolute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Add.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Angle.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Average.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3CrossProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Distance.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Divide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3DotProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Lerp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Maximum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Minimum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Modulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3MoveTowards.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Multiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Normalize.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3PerSecond.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Project.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Round.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Subtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector3\Vector3Sum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Absolute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Add.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Average.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Distance.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Divide.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4DotProduct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Lerp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Maximum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Minimum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Modulo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4MoveTowards.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Multiply.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Normalize.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4PerSecond.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Round.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Subtract.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Math\Vector4\Vector4Sum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\GetVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\IsVariableDefined.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\IUnifiedVariableUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\SaveVariables.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\SetVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\_Legacy\Units\Variables\UnifiedVariableUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\ControlConnection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\InvalidConnection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\IUnitConnection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\IUnitConnectionDebugData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\IUnitRelation.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\UnitConnection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\UnitConnectionDebugData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\UnitRelation.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\ValueConnection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Connections\ValueConnectionDebugData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\ExtractUnitAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\UnitCategoryAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\UnitDisplayAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\UnitPortDisplayAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\UnitPortKeyAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\EditorBinding\UnitSettingDisplayAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Flow.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Generation\GeneratedFlowBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Generation\IGeneratedFlowBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowBehaviourData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowClassGraph.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowFunction.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowFunctionData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowGraph.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowGraphData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowGraphVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowGraphVariableCollection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowMacro.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\FlowMacroData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\IFlowGraphData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Graphs\IFlowGraphDataWithPersistentVariables.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\FlowControlRootVisitor.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\FlowCoroutineVisitor.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\FlowExternalVisitor.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\FlowHeuristics.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\FlowVisitor.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Heuristics\IFlowVisitor.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\IBoltClassUnitGraph.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlInputData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlInputDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlOutput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlOutputData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlOutputDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ControlPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\InvalidInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\InvalidOutput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitControlPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitControlPortData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitControlPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitInputPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitInputPortData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitInputPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitInvalidPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitOutputPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitOutputPortData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitOutputPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitPortData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitValuePort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitValuePortData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\IUnitValuePortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\MissingValuePortInputException.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPort.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPortCollection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPortDefinitionCollection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPortDefinitionMergedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\UnitPortMergedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueInputData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueInputDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueOutput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueOutputData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValueOutputDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Ports\ValuePortDefinition.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\ActivateBoltClassBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\BoltClassEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\BoltClassGraphUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\BoltClassMemberUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\BoltClassVariableUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\BoltMemberUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\DeactivateBoltClassBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowFunctionEntry.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowFunctionExit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowFunctionUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowGraphVariableUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowMacroInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowMacroOutput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\FlowMacroUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\GetBoltClassVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\GetFlowGraphVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\InvokeBoltClassEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\IsBoltClassBehaviourActive.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\SetBoltClassVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\SetFlowGraphVariable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Architecture\ToggleBoltClassBehaviour.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\BinaryOperatorUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\CreateStruct.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\Expose.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\GetMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\IndexerGetMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\IndexerSetMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\InvokeMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\MemberUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\SetMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\TweenMember.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Codebase\UnaryOperatorUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Animation\BoltAnimationEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Animation\BoltNamedAnimationEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Animation\OnAnimatorIK.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Animation\OnAnimatorMove.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Application\OnApplicationFocus.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Application\OnApplicationLostFocus.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Application\OnApplicationPause.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Application\OnApplicationQuit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Application\OnApplicationResume.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\ApplicationEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\BoltUnityEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\ComponentEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Editor\OnDrawGizmos.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Editor\OnDrawGizmosSelected.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\EventHandlerUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\EventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\EventUnitTrait.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GameObjectEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\GenericGuiEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnBeginDrag.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnButtonClick.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnCancel.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnDeselect.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnDrag.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnDrop.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnDropdownValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnEndDrag.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnGUI.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnInputFieldEndEdit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnInputFieldValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnMove.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnPointerClick.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnPointerDown.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnPointerEnter.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnPointerExit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnPointerUp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnScroll.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnScrollbarValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnScrollRectValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnSelect.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnSliderValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnSubmit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\OnToggleValueChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\GUI\PointerEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Hierarchy\OnTransformChildrenChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Hierarchy\OnTransformParentChanged.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\IBehaviourUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\IEventHandlerUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\IEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\IEventUnitData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnButtonInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnKeyboardInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseDown.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseDrag.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseEnter.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseExit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseInput.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseOver.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseUp.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Input\OnMouseUpAsButton.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\FixedUpdate.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\LateUpdate.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\OnDestroy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\OnDisable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\OnEnable.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\Start.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Lifecycle\Update.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\ManualEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\MemberEvent.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Navigation\OnDestinationReached.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\CollisionEvent2DUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnCollisionEnter2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnCollisionExit2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnCollisionStay2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnJointBreak2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnTriggerEnter2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnTriggerExit2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\OnTriggerStay2D.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics 2D\TriggerEvent2DUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\CollisionEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnCollisionEnter.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnCollisionExit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnCollisionStay.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnControllerColliderHit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnJointBreak.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnParticleCollision.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnParticleTrigger.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnTriggerEnter.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnTriggerExit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\OnTriggerStay.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Physics\TriggerEventUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Rendering\OnBecameInvisible.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Rendering\OnBecameVisible.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Events\Time\OnTimerElapsed.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Branch.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Break.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Cache.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\ConvertUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\CoroutineUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\DelegateUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\For.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\ForEach.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\IBranchUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\ISelectUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\LoopUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Once.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectOnEnum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectOnFlow.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectOnInteger.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectOnString.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SelectUnit_T.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Sequence.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SwitchOnEnum.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SwitchOnInteger.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SwitchOnString.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\SwitchUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\Throw.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\ToggleFlow.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\ToggleValue.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\TryCatch.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Flow\While.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\IGraphParentUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\IUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\IUnitDebugData.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Logic\And.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Logic\ExclusiveOr.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Logic\Not.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Logic\Or.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Logic\TypedComparison.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Misc\Is.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Misc\Literal.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Misc\MultiInputUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Misc\Self.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Misc\SliderUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Nulls\Null.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Nulls\NullCheck.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Nulls\NullCoalesce.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Proxies\IUnitPortProxy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Proxies\UnitControlPortProxy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Proxies\UnitPortProxy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Proxies\UnitPortProxyTarget.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Proxies\UnitValuePortProxy.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\Cooldown.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\Timer.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForCoroutine.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForEndOfFrameUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForFlow.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForInstruction.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForNextFrameUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitForSecondsUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitUntilUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Time\WaitWhileUnit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\Unit.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\UnitDefinitionUtility.cs" />
+    <Compile Include="Assets\Ludiq\Bolt.Flow\Runtime\Units\UnitPreservation.cs" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Bolt.Core/Runtime/Dependencies/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Ludiq.Core/Editor/Dependencies/YamlDotNet/YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.OdinSerializer">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Ludiq.Core/Runtime/Dependencies/OdinSerializer/EditorOnly/Ludiq.OdinSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.messenger@1.0.7-preview/Editor/Third-Party/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Ludiq.Core.Runtime.csproj">
+      <Project>{809866B1-5962-39FB-5EF0-4BD678FBE379}</Project>
+      <Name>Ludiq.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Bolt.Core.Runtime.csproj">
+      <Project>{0B4C14CE-96CD-CFFE-2B29-75C24F7AFDB8}</Project>
+      <Name>Bolt.Core.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

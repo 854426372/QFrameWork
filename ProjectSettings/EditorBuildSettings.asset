@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 992cc9a1329fb074285fb20d00c25375
+    path: "Assets/QFramework/Example/11.\u5F00\u53D1\u73AF\u5883\u7BA1\u7406\u5668Example/Game/Game.unity"
+    guid: 8038016768c6a8044abbadf5831024ce
+  - enabled: 1
+    path: Assets/QFramework/Example/15.LevelManager/Level.unity
+    guid: 242d8d8524255554fac6a29354a2a1c9
+  - enabled: 1
+    path: "Assets/QFramework/Example/11.\u5F00\u53D1\u73AF\u5883\u7BA1\u7406\u5668Example/Home/Home.unity"
+    guid: 2b3f813bd79443e48a06c0b2cb11b78b
   m_configObjects: {}

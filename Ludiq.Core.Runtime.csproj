@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{809866B1-5962-39FB-5EF0-4BD678FBE379}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Ludiq.Core.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_19;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.4.19f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\UnityHubDownload\2018.4.19f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\UnityHubDownload\2018.4.19f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\_Legacy\Collections\AotDictionary.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\_Legacy\Collections\AotDictionaryFormatter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\_Legacy\Collections\AotList.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\_Legacy\Collections\AotListFormatter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\AnimationCurveCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\ArrayCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\DictionaryCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\EnumerableCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\FieldsCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\GradientCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\ListCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\ReflectedCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloners\SerializationPolicyCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\Cloning.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\CloningContext.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\ICloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Cloning\ISpecifiesCloner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\IBulkCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\ICollectionChild.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\IKeyedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\IMergedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\INotifiedCollectionItem.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\KeyedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\MergedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\MergedKeyedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\MergedList.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\NoAllocEnumerator.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\ParentCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\ParentMergedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\VariantCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\VariantKeyedCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Collections\VariantList.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Decorators\IRegisterDecoratorAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsArrayConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsDateConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsEnumConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsForwardConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsGuidConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsIEnumerableConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsKeyValuePairConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsNullableConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsPrimitiveConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsReflectedConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsTypeConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\fsWeakReferenceConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\Bounds_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\Keyframe_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\LayerMask_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\Rect_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\RectOffset_DirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Converters\Unity\UnityEvent_Converter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsAotCompilationManager.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsBaseConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsConfig.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsContext.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsConverterRegistrar.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsData.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsDirectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsExceptions.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsIgnoreAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsISerializationCallbacks.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsJsonParser.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsJsonPrinter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsMemberSerialization.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsObjectAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsObjectProcessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsPropertyAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsResult.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\fsSerializer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsOption.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsPortableReflection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsTypeExtensions.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsVersionedType.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Internal\fsVersionManager.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Reflection\fsMetaProperty.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Reflection\fsMetaType.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Reflection\fsReflectionUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\FullSerializer\Reflection\fsTypeCache.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\OdinSerializer\OdinBuildAutomation.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\AllowsNullAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\DisableAnnotationAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\EditorBindingUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\EditorTimeBinding.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\ExpectedTypeAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\IInspectableAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\IncludeInSettingsAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\InspectableAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\InspectableIfAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorActionDirectionAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorDelayedAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorExpandTooltipAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorFieldWidthAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorLabelAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorObjectTypeAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorPlaceholderLabelAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorRangeAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorReorderableAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorShowInFooterAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorSpaceAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorTextAreaAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorToggleLeftAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorTypeHideRootAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorWideAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Inspector\InspectorWrapAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\NullMeansSelfAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\PredictableAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\TypeIconAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\TypeIconPriorityAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\Typeset.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\EditorBinding\TypeSetAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\Ensure.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Booleans.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Collections.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Comparables.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Guids.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.NullableValueTypes.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Objects.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Reflection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Strings.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.Types.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\EnsureThat.ValueTypes.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\ExceptionMessages.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\Extensions\XComparable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Ensure\Extensions\XString.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Exceptions\DebugUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Exceptions\InvalidConversionException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Exceptions\InvalidImplementationException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Exceptions\UnexpectedEnumValueException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Input\MouseButton.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Input\PressState.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Math\Axes2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Math\Axis2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Math\Edge.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Math\Edges.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Math\Line2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Notification\INotifyCollectionChangedPausable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Notification\INotifyCollectionItemPropertyChanged.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Platforms\AotIncompatibleAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Platforms\PlatformUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\ArrayPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\DictionaryPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\GenericPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\HashSetPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\IPoolable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\ListPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\ManualPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\QueuePool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Pooling\StackPool.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Profiling\ProfiledSegment.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Profiling\ProfiledSegmentCollection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Profiling\ProfilingScope.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Profiling\ProfilingUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\AttributeUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\ConversionUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\DelegateUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\GenericClosingException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\IAttributeProvider.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\IPrewarmable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\LooseAssemblyName.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Member.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberAction.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberData.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberDataFastSerializer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberFilter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberInfoComparer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\MemberUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Namespace.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\NamespaceFormatter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\AdditionHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\AmbiguousOperatorException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BinaryOperator.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BinaryOperatorHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BitwiseAndHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BitwiseExclusiveOrHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BitwiseNegationHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\BitwiseOrHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\DecrementHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\DivisionHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\EqualityHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\GreaterThanHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\GreaterThanOrEqualHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\IncrementHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\InequalityHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\InvalidOperatorException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\LeftShiftHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\LessThanHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\LessThanOrEqualHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\ModuloHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\MultiplicationHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\NumericNegationHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\OperatorCategory.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\OperatorException.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\OperatorHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\OperatorUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\PlusHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\RightShiftHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\SubtractionHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\UnaryOperator.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Operators\UnaryOperatorHandler.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\Action_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\Action_6.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\Func_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\Func_6.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_0.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_1.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_3.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_4.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvoker_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceActionInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFieldAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_0.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_1.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_3.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_4.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvoker_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceFunctionInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstanceInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InstancePropertyAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\InvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\IOptimizedAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\IOptimizedInvoker.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\OptimizedReflection.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\ReflectionFieldAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\ReflectionInvoker.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\ReflectionPropertyAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_0.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_1.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_3.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_4.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvoker_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticActionInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFieldAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_0.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_1.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_2.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_3.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_4.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvoker_5.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticFunctionInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticInvokerBase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\Optimization\StaticPropertyAccessor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\RenamedFromAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\RenamedNamespaceAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\RuntimeCodebase.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeData.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeFilter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeName.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeNameDetail.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeQualifier.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeSignature.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypesMatching.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Reflection\TypeUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Converters\LooseAssemblyNameConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Converters\NamespaceConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Converters\Ray2DConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Converters\RayConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Converters\UnityObjectConverter.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\DictionaryAsset.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\DoNotSerializeAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\FastSerializer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\FastSerializerUtilities.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\FullSerializationData.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\FullSerializationOperation.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\ISerializationDependency.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\ISerializationDepender.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\Serialization.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\SerializationLogger.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\SerializationPolicy.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\SerializationTypeBinder.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\SerializeAsAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Serialization\SerializeAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\SerializedProperties\ISerializedPropertyProvider.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\SerializedProperties\RegisterSerializedPropertyProviderAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\SerializedProperties\SerializedPropertyProvider.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\IGizmoDrawer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\ILudiqRootObject.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\ISingleton.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\LudiqAsset.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\LudiqComponent.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\SceneSingleton.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\Singleton.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\SingletonAttribute.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Unity\UnityThread.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\Breakpoint.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\ComponentHolderProtocol.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\CoroutineRunner.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\CSharpNameUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\DictionaryUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\Empty.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\EnumUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\ExceptionUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\GuidUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\HashUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\IIdentifiable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\IInitializable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\IObservableDisposable.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\LinqUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\ListUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\MathUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\OverrideStack.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\PaletteColor.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\Recursion.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\ReferenceCollector.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\ReferenceEqualityComparer.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\RegexPatterns.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\SequencePredicate.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\StringUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\UnityObjectUtility.cs" />
+    <Compile Include="Assets\Ludiq\Ludiq.Core\Runtime\Utilities\XColor.cs" />
+    <None Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\OdinSerializer\EditorOnly\Ludiq.OdinSerializer.xml" />
+    <None Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\OdinSerializer\License.txt" />
+    <None Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\OdinSerializer\AOT\link.xml" />
+    <None Include="Assets\Ludiq\Ludiq.Core\Runtime\Dependencies\OdinSerializer\Version.txt" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Bolt.Core/Runtime/Dependencies/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Ludiq.Core/Editor/Dependencies/YamlDotNet/YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.OdinSerializer">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Assets/Ludiq/Ludiq.Core/Runtime/Dependencies/OdinSerializer/EditorOnly/Ludiq.OdinSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.messenger@1.0.7-preview/Editor/Third-Party/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>E:/A_In2020_Using/QFrameWork/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:/UnityHubDownload/2018.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
